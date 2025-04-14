@@ -291,10 +291,9 @@
                             <phase>compile</phase>
                             <goals>
                                 <goal>process-file</goal>
-                                <goal> help</goal>
                             </goals>
                             <configuration>
-                                <fileName>C:\Users\26485\Downloads\mavenlog.txt</fileName>
+                                <fileName>C:/Users/26485/Downloads/mavenlog.txt</fileName>
                             </configuration>
                         </execution>
                     </executions>
@@ -306,7 +305,18 @@
             <plugin>
                 <groupId>com.quanxiaoha</groupId>
                 <artifactId>my-maven-plugin</artifactId>
-
+                <executions>
+                    <execution>
+                                        <id>help-mojo</id>
+                                       <phase>compile</phase>
+                                         <goals>
+                                           <goal>process-file</goal>
+                                       </goals>
+                                       <configuration>
+                                             <fileName>C:/Users/26485/Downloads/mavenlog.txt</fileName>
+                                       </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
