@@ -291,7 +291,7 @@
                             <phase>compile</phase>
                             <goals>
                                 <goal>process-file</goal>
-
+                                <goal> help</goal>
                             </goals>
                             <configuration>
                                 <fileName>C:\Users\26485\Downloads\mavenlog.txt</fileName>
@@ -299,8 +299,6 @@
                         </execution>
                     </executions>
                 </plugin>
-
-
             </plugins>
         </pluginManagement>
         <plugins>
@@ -308,6 +306,7 @@
             <plugin>
                 <groupId>com.quanxiaoha</groupId>
                 <artifactId>my-maven-plugin</artifactId>
+
             </plugin>
         </plugins>
     </build>
