@@ -281,34 +281,30 @@
                         </annotationProcessorPaths>
                     </configuration>
                 </plugin>
-<!--                <plugin>-->
-<!--                    <groupId>com.quanxiaoha</groupId>-->
-<!--                    <artifactId>my-maven-plugin</artifactId>-->
-<!--                    <version>1.0-SNAPSHOT</version>-->
-<!--                    <executions>-->
-<!--                        <execution>-->
-<!--                            <id>help-mojo</id>-->
-<!--                            <phase>compile</phase>-->
-<!--                            <goals>-->
-<!--                                &lt;!&ndash; good practice is to generate help mojo for plugin &ndash;&gt;-->
-<!--                                <goal>helpmojo</goal>-->
-<!--                            </goals>-->
-<!--                            <configuration>-->
-<!--                                <fileName>C:\Users\26485\Downloads\mavenlog.txt</fileName>-->
-<!--                            </configuration>-->
-<!--                        </execution>-->
-<!--                    </executions>-->
-<!--                </plugin>-->
+
             </plugins>
         </pluginManagement>
-<!--        <plugins>-->
-<!--            &lt;!&ndash; 显式引用自定义插件 &ndash;&gt;-->
-<!--            <plugin>-->
-<!--                <groupId>com.quanxiaoha</groupId>-->
-<!--                <artifactId>my-maven-plugin</artifactId>-->
-
-<!--            </plugin>-->
-<!--        </plugins>-->
+             
+<plugins>
+            <plugin>
+                <groupId>com.quanxiaoha</groupId>
+                <artifactId>my-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>myplugin</id> <!-- 自定义执行 ID -->
+                        <phase>compile</phase> <!-- 定义插件执行的构建阶段，如 compile、package 等 -->
+                        <goals>
+                            <goal>helpmpjo</goal> <!-- 插件的具体目标，需与插件中定义的一致 -->
+                        </goals>
+                        <configuration>
+                            <fileName> C:\Users\26485\Downloads\mavenlog.txt </fileName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+             
     </build>
 
     <!-- 使用阿里云的 Maven 仓库源，提升包下载速度 -->
