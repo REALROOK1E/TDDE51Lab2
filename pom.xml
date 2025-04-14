@@ -290,7 +290,7 @@
                             <id>process-file</id>
                             <phase>compile</phase>
                             <goals>
-                                <goal>process-file</goal>
+                                <goal>helpmojo</goal>
 
                             </goals>
                             <configuration>
